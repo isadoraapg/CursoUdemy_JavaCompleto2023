@@ -51,14 +51,76 @@ public class Secao5_EstruturasCondicionais {
 		
 		
 		
+		//SINTAXE OPCIONAL - OPERADORES DE ATRIBUIÇÃO CUMULATIVA:
+		
+//		a += b; ------> a = a + b;
+//		a -= b; ------> a = a - b;
+//		a *= b; ------> a = a * b;
+//		a /= b; ------> a = a / b;
+//		a %= b; ------> a = a % b;
+		
+		//SINTAXE OPCIONAL - SWITCH CASE
+		
+//		Scanner sc = new Scanner(System.in);
+//		int x = sc.nextInt();
+//		String dia;
+//		
+//		switch(x) {
+//		case 1:
+//			dia = "domingo";
+//			break;
+//		case 2:
+//			dia = "segunda";
+//			break;
+//		case 3:
+//			dia = "terça";
+//			break;
+//		case 4:
+//			dia = "quarta";
+//			break;
+//		case 5:
+//			dia = "quinta";
+//			break;
+//		case 6:
+//			dia = "sexta";
+//			break;
+//		case 7:
+//			dia = "sábado";
+//			break;
+//		default:
+//			dia = "dia inválido";
+//			break;
+//		}
+//		System.out.println("Dia da semana: " + dia);
+//		sc.close();
 		
 		
 		
 		
+		//EXPRESSÃO CONDICIONAL TERNÁRIA
+		//Estrutura opcional ao if-else quando se deseja decidir um VALOR com base em uma condição
+		
+		//Sintaxe:
+		// (condição) ? valor_se_verdadeiro : valor_se_falso
+		
+		//Exemplo:
+		//(2 > 4) ? 50 : 80  ------> resultado = 80, pq a condição é falsa
 		
 		
+//		double preco = 34.5;
+//		double desconto;
+//		if(preco < 20.0) {
+//			desconto = preco * 0.1;
+//		}
+//		else {
+//			desconto = preco * 0.05;
+//		}
+				
 		
-		
+		//VIRA ISSO:		
+//		double preco  = 34.5;
+//		double desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
+				
 	}
 
 }
