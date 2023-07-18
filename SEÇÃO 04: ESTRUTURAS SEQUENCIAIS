@@ -1,0 +1,273 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class Secao4_EstruturasSequenciais {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//CURSO UDEMY - JAVA COMPLETO
+		//SEÇÃO 4: ESTRUTURAS SEQUENCIAIS:
+		
+
+		//System.out.println("Olá, Mundo!");
+			//print - sem quebra de linha
+			//println - com quebra de linha 
+		
+		
+		// SINTAXE:
+		//<tipo> <nome> = <valor inicial>;
+		
+		//EXEMPLO:
+		// int idade = 25;
+		//double altura = 1.68;
+		//double significa um numero com casas decimais
+		
+		//char sexo = 'F';
+		//char corresponde a UM caracter unicode
+		
+		//UMA VARIÁVEL POSSUI:
+		// * Nome
+		// * Tipo
+		// * Valor
+		// * Endereço (qual local da memoria ram a variavel está)
+		
+		//TIPOS PRIMITIVOS EM JAVA:
+		//byte, short, int, long (TIPOS NUMERICOS INTEIROS)
+		//float, double (TIPOS NUM COM PONTO FLUTUANTE)
+		//char (UM CARACTERE UNICODE)
+		//boolean (valor verdade - false, true)
+		
+		//String - cadeia de caracteres (palavras ou textos)
+		
+		
+		
+		
+//		double x = 10.35784;
+//		System.out.printf("%.2f%n", x);
+//		System.out.printf("%.4f%n", x);
+//		Locale.setDefault(Locale.US);
+//		//MUDA A , PARA .
+//		System.out.printf("%.4f%n", x);
+//		
+//		
+//		System.out.printf("RESULTADO = %.2f metros%n", x);
+		
+		
+		
+		
+		
+		
+//		String nome = "Maria";
+//		int idade = 31;
+//		double renda = 4000.0;
+//		System.out.printf("%s tem %d anos e ganha R$%.2f reais%n", nome, idade, renda);
+		
+				
+		
+		
+		
+		
+//		int x, y;
+//		x = 5;
+//		y = 2 * x;
+//		
+//		System.out.println(x);
+//		System.out.println(y);
+		
+		
+//		int x;
+//		double y;
+//		x = 5;
+//		y = 2 * x;
+//		
+//		System.out.println(x);
+//		System.out.println(y);
+		
+		
+		
+//		double b, B, h, area;
+//		b=6.0;
+//		B=8.0;
+//		h=5.0;
+//		
+//		area = (b + B) / 2.0 * h;
+//		
+//		System.out.println(area);
+		
+		
+//		int a, b;
+//		double resultado;
+//		a = 5;
+//		b = 2;
+//		
+//		resultado = (double) a / b;
+//		//double indica que vc quer q o resultado apareça em double
+//		
+//		System.out.println(resultado);
+		
+		
+		
+//		double a;
+//		int b;
+//		
+//		a = 5.0;
+//		b = (int) a;
+//		
+//		System.out.println(b);
+		
+		
+		
+		
+		//ENTRADA DE DADOS:
+		
+		//Para fazer entrada de dados, vamos criar um objeto do tipo "Scanner":
+		
+		//Scanner sc = new Scanner(System.in);
+		//fazer sc.close() quando não precisar mais do objeto scanner
+		
+		
+//		Scanner sc = new Scanner (System.in);
+//		
+//		String x;
+//		x = sc.next();
+//		System.out.println("Você digitou: " + x);
+//		
+//		
+//		sc.close();
+		
+		
+		
+//		Scanner sc = new Scanner (System.in);
+//		int x;
+//		x = sc.nextInt();
+//		System.out.println("Você digitou: " + x);
+//		sc.close();
+		
+		
+//		Scanner sc = new Scanner (System.in);
+//		double x;
+//		x = sc.nextDouble();
+		//System.out.println("Você digitou: " + x);
+//		System.out.printf("Você digitou: %.2f%n", x);
+//		sc.close();
+		//para considerar o separador de decimais como ponto, antes de declarar scanner, faça:
+		//Locale.setDefault(Locale.US);
+		
+		//para imprimir com vírgula, não usar println, usar printf
+		
+		
+		
+		//Para ler UM caractere:
+		
+//		Scanner sc = new Scanner (System.in);
+//		char x;
+//		x = sc.next().charAt(0);
+//		System.out.println("Você digitou: " + x);
+//		sc.close();
+		
+		
+		//Para ler vários dados na mesma linha:
+		
+//		Scanner sc = new Scanner (System.in);
+//		
+//		String x;
+//		int y;
+//		double z;
+//		
+//		x = sc.next();
+//		y = sc.nextInt();
+//		z = sc.nextDouble();
+//		
+//		System.out.println("Você digitou: ");
+//		System.out.println(x);
+//		System.out.println(y);
+//		System.out.println(z);
+//		sc.close();
+		
+		
+		// Para ler um texto até a quebra de linha:
+
+//		Scanner sc = new Scanner(System.in);
+//		String s1, s2, s3;
+//		s1 = sc.nextLine();
+//		s2 = sc.nextLine();
+//		s3 = sc.nextLine();
+//
+//		System.out.println("Dados digitados:");
+//		System.out.println(s1);
+//		System.out.println(s2);
+//		System.out.println(s3);
+//
+//		sc.close();
+		
+		//nextLine le a linha inteira. o next le apenas 1 palavra
+		
+		
+		
+		//quando vc usa um comando de leitura diferente do nextLine e da alguma quebra de linha,
+		//essa quebra de linha fica "pendente" na entrada padrão
+		//~solução: fazer um nextLine extra pra consumir a quebra de linha diferente
+		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		int x;
+//		String s1, s2, s3;
+//		x = sc.nextInt();
+//		sc.nextLine();
+//		s1 = sc.nextLine();
+//		s2 = sc.nextLine();
+//		s3 = sc.nextLine();
+//
+//		System.out.println("Dados digitados:");
+//		System.out.println(x);
+//		System.out.println(s1);
+//		System.out.println(s2);
+//		System.out.println(s3);
+//
+//		sc.close();
+		
+		
+		
+		
+		//FUNÇÕES MATEMÁTICAS:
+		
+		//A = Math.sqrt(x); - variavel A recebe a raiz quadrada de x
+		//A = Math.pow(x, y); - variavel A recebe o resultado de x elevado a y
+		//A = Math.abs(x); - variavel A recebe o valor absoluto de x (tirar o negativo)
+		
+		
+//		double x = 3.0;
+//		double y = 4.0;
+//		double z = -5.0;
+//		double A, B, C;
+//		
+//		A = Math.sqrt(x);
+//		B = Math.sqrt(y);
+//		C = Math.sqrt(25.0);
+//		System.out.println("Raiz quadrada de " + x + " = " + A);
+//		System.out.println("Raiz quadrada de " + y + " =" + B);
+//		System.out.println("Raiz quadrada de 25 = " + C);
+//		
+//		A = Math.pow(x,  y);
+//		B = Math.pow(x,  2.0);
+//		C = Math.pow(5.0, 2.0);
+//		System.out.println(x + " elevado a " + y + " = " + A);
+//		System.out.println(x + " elevado ao quadrado = " + B);
+//		System.out.println("5 elevado ao quadrado = " + C);
+//		
+//		A = Math.abs(y);
+//		B = Math.abs(z);
+//		System.out.println("Valor absoluto de " + y + " = " + A);
+//		System.out.println("Valor absoluto de " + z + " = " + B);
+		
+		
+		//Fórmula de bhaskara* 
+		
+//		delta = Math.pow(b,  2.0) - 4*a*c;
+//		x1 = (-b + Math.sqrt(delta)) / (2.0 * a);
+//		x2 = (-b - Math.sqrt(delta)) / (2.0 * a);
+		
+		
+	}
+
+}
