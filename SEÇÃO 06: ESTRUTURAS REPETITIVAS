@@ -1,0 +1,111 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Secao6_EstruturaRepetitiva {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		//SEÇÃO 06 - ESTRUTURA DE REPETIÇÃO 
+
+		//WHILE
+		
+		// é uma estrutura de controle que repete um bloco de comandos enquanto uma condição for verdadeira.
+		//usa-se quando não se sabe a quantidade de repetições q será realizada
+		
+//		V: executa e volta
+//		F: pula fora
+		
+//		while (condição) {
+//			comando 1
+//			comando 2
+//		}
+		
+		
+		
+//		Scanner sc = new Scanner(System.in);
+//		int x = sc.nextInt();
+//		int soma = 0; 
+//		//enquanto x for diferente de zero, ele vai ficar lendo o x
+//		//vai somar os numeros digitados
+//		while(x != 0) {
+//			//'soma' recebe o q ja tinha nela +x
+//			soma = soma + x;
+//			x = sc.nextInt();
+//		}
+//				
+//		System.out.println(soma);
+//		
+//		sc.close();
+		
+		
+		
+		//FOR
+		// é uma estrutura de controle q repete um bloco de comandos para um certo intervalo de valores
+		// usa-se qnd se sabe previamente a quantidade de repetições ou o intervalo de valores.
+
+		//for (inicio; condicao; incremento){
+		//		comando 1
+		//		comando 2
+		//}
+		
+		//inicio: executa somente na primeira vez
+		//condição: V - executa e volta | F - pula fora
+		//incremento: executar toda vez dps de voltar
+		
+//		Scanner sc = new Scanner(System.in);
+		
+		
+		//N = vamos digitar quantas vezes a gnt quer repetir/quantos numeros queremos digitar
+//		int N = sc.nextInt();
+//		
+//		int soma = 0;
+//		
+//		
+//		//primeira coisa que será executada é o int i = 0;
+//		for(int i = 0; i < N; i++) {
+//			int x = sc.nextInt();
+//			soma = soma + x;
+//		}
+//		
+//		System.out.println(soma);
+//		
+//		sc.close();
+		
+		
+		
+		//DO-WHILE
+		//menos utilizada. O bloco de comandos executa pelo menos uma vez, pois a condição é verificada no final.
+		
+//		V- volta | F - pula fora
+//		do {
+//			comando 1
+//			comando 2
+//		}while(condição);
+		
+		
+		//Exemplo: programa q le temperatura em celsius e mostra o equivalente em Fahrenheit.
+		//Perguntar se o usuario deseja repetir(s/n). caso digite s, repetir o programa.
+		
+//		Locale.setDefault(Locale.US);
+//		Scanner sc = new Scanner(System.in);
+//			
+//		char resp;
+//		
+//		do {
+//		System.out.print("Digite a temperatura em Celsius: ");
+//		double C = sc.nextDouble();
+//		double F = 9.0 * C / 5.0 + 32.0;
+//		System.out.printf("Equivalente em Fahrenheit: %.1f%n", F);		
+//		System.out.print("Deseja repetir (s/n)?");
+//		resp = sc.next().charAt(0);	
+//		
+//		}while (resp !='n');
+//		
+//		sc.close();
+		
+				
+	}
+
+}
